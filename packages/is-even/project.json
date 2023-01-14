@@ -1,0 +1,36 @@
+{
+  "name": "is-even",
+  "root": "packages/is-even",
+  "sourceRoot": "packages/is-even/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npx tsc",
+        "cwd": "packages/is-even"
+      }
+    },
+    "ts-check": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npx tsc --noEmit",
+        "cwd": "packages/is-even"
+      }
+    },
+    "test": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npx vitest run --coverage",
+        "cwd": "packages/is-even"
+      }
+    },
+    "test:watch": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npx vitest",
+        "cwd": "packages/is-even"
+      }
+    }
+  }
+}

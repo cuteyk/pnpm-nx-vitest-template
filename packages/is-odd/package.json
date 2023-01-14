@@ -1,0 +1,15 @@
+{
+  "name": "is-odd",
+  "version": "0.0.1",
+  "main": "./lib/index.js",
+  "types": "./lib/typings/index.d.ts",
+  "description": "is-odd",
+  "devDependencies": {},
+  "scripts": {
+    "prepare": "npx nx build"
+  },
+  "dependencies": {
+    "is-even": "workspace:*"
+  },
+  "license": "Apache-2.0"
+}

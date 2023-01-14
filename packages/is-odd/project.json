@@ -1,0 +1,36 @@
+{
+  "name": "is-odd",
+  "root": "packages/is-odd",
+  "sourceRoot": "packages/is-odd/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npx tsc",
+        "cwd": "packages/is-odd"
+      }
+    },
+    "ts-check": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npx tsc --noEmit",
+        "cwd": "packages/is-odd"
+      }
+    },
+    "test": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npx vitest run --coverage",
+        "cwd": "packages/is-odd"
+      }
+    },
+    "test:watch": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npx vitest",
+        "cwd": "packages/is-odd"
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "is-even",
+  "version": "0.0.1",
+  "main": "./lib/index.js",
+  "types": "./lib/typings/index.d.ts",
+  "description": "is-even",
+  "scripts": {
+    "prepare": "npx nx build"
+  },
+  "devDependencies": {},
+  "dependencies": {},
+  "license": "Apache-2.0"
+}
